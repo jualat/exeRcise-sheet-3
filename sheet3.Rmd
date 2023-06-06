@@ -1,0 +1,16 @@
+---
+title: "Exercise 3"
+subtitle: "Fortgeschrittene Statistische Software für NF - SS 2022/23"
+author: "Valentin Mesmer (12578200), Tim-Luis Hartenfels (12597574), Junis Al Attar (12574322)"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+
+## Exercise 1: Initializing git (4 Points)
+
+## Exercise 2: Putting your Repository on GitHub (3.5 Points)
+
+## Exercise 3: Baby-Names in Munich (4.5 Points)
+
+## Exercise 4: Chat GPT + apply (3 points)
