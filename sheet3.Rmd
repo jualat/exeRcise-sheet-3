@@ -9,6 +9,20 @@ output: pdf_document
 
 ## Exercise 1: Initializing git (4 Points)
 
+d) Strengths of Git:
+
+    1. Git enables every developer working on a project to have a copy of the repository at a special version, so he can work offline and synchronize with the repository when connected to the internet
+    
+    2. Developers can create branches to work on different features or versions and merge them later.
+    
+
+    Weaknesses of Git:
+
+      1. It may be hard to learn git, because at the beginning learners may have some problems to create an account and to understand the connection between e.g. GitHub and their local version.
+    
+      2. Git tracks the changes in files line by line, which is really great for code, but really bad for large files like images, zips or binaries.
+      
+      
 ## Exercise 2: Putting your Repository on GitHub (3.5 Points)
 
 ## Exercise 3: Baby-Names in Munich (4.5 Points)
