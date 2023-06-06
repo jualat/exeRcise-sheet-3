@@ -106,7 +106,19 @@ e)
     ```{r}
     combined_data <- bind_rows(data2022, data2021)
     ```
-    
+
+f)
+
+    ```{r}
+    library(knitr)
+    top_names <- combined_data %>%
+    group_by(Vorname) %>%
+    summarize(count = sum(Anzahl, na.rm = TRUE)) %>%
+    arrange(desc(count)) %>%
+    head(10)
+    kable(top_names, caption = "Top 10 Most Popular Names")
+    ```
+
 
     
 
