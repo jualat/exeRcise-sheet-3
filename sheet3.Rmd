@@ -89,6 +89,18 @@ c)
     }
   
     ```
+ 
+   
+d)
+
+    ```{r}
+    data2022 <- data2022 %>%
+    mutate(year = 2022)
+
+    data2021 <- data2021 %>%
+    mutate(year = 2021)
+    ```
+
     
 
     
