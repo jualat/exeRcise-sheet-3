@@ -66,6 +66,31 @@ b)
     
     On top of this its not a natural number, so it's obvious that it's not a real measured value.
     
+
+c)
+
+    ```{r}
+    total_babies_2022 <- sum(data2022$Anzahl, na.rm = TRUE)
+    total_babies_2021 <- sum(data2021$Anzahl, na.rm = TRUE)
+    
+    if (total_babies_2022 > total_babies_2021) {
+      bigger_baby_boom_year <- 2022
+    } else if (total_babies_2022 < total_babies_2021) {
+      bigger_baby_boom_year <- 2021
+    } else {
+      bigger_baby_boom_year <- NULL
+    }
+    
+    
+    if (is.null(bigger_baby_boom_year)) {
+      cat("There was no significant difference in baby booms between 2021 and 2022.")
+    } else {
+      cat("The year with the bigger baby boom is", bigger_baby_boom_year)
+    }
+  
+    ```
+    
+
     
 
 ## Exercise 4: Chat GPT + apply (3 points)
