@@ -25,6 +25,9 @@ d) Strengths of Git:
       
 ## Exercise 2: Putting your Repository on GitHub (3.5 Points)
 
+a) [GitHub Repository](https://github.com/jualat/exeRcise-sheet-3)
+
+
 ## Exercise 3: Baby-Names in Munich (4.5 Points)
 
 ## Exercise 4: Chat GPT + apply (3 points)
