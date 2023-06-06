@@ -123,3 +123,34 @@ f)
     
 
 ## Exercise 4: Chat GPT + apply (3 points)
+
+a)
+
+
+  
+    ```{r}
+    tax_data <- data.frame( Name = c("Munich GmbH", "ABC Inc.", 
+                                     "Backpacks 1980", "Bavarian Circus"),
+    Tax_2019 = c(5000, 4000, 6000, 3500), 
+    Tax_2020 = c(4800, 4200, 5800, 3700), 
+    Tax_2021 = c(5200, 3800,5900, 3400))
+    ``` 
+
+    The incorrect apply function used in the code is lapply(tax_data[, -1], 2, mean). The correct apply function to calculate column-wise means is sapply.
+    
+    
+    ```{r}
+    column_means <- sapply(tax_data[, -1], mean)
+    ``` 
+    
+    
+    To calculate the row-wise means, you can use the rowMeans function.
+    
+    ```{r}
+    row_means <- rowMeans(tax_data[, -1])
+    ``` 
+    
+    
+    This code will calculate the means of each row in the tax_data data frame, excluding the first column. The resulting row_means object will be a vector containing the means of each row.
+    
+    
