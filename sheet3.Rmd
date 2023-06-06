@@ -101,6 +101,11 @@ d)
     mutate(year = 2021)
     ```
 
+e)
+
+    ```{r}
+    combined_data <- bind_rows(data2022, data2021)
+    ```
     
 
     
