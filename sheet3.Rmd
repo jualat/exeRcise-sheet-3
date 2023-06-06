@@ -30,4 +30,42 @@ a) [GitHub Repository](https://github.com/jualat/exeRcise-sheet-3)
 
 ## Exercise 3: Baby-Names in Munich (4.5 Points)
 
+b)
+    ```{r}
+    library(readr)
+
+    data2022 <- read_csv("vornamen_2022.csv",col_types = 
+                           cols(Vorname = col_character(), 
+                                Anzahl = col_character(), 
+                                Geschlecht = col_character()))
+    data2021 <- read_csv("vornamen_2021.csv",col_types = 
+                            cols(Vorname = col_character(), 
+                                 Anzahl = col_character(), 
+                                 Geschlecht = col_character()))
+    ```
+    
+    Type of "Anzahl": Character
+    
+    Its not numeric, because there are rows called "4 oder weniger", which is not numeric
+    
+    
+    ```{r, warning=FALSE, message=FALSE}
+    library(readr)
+    library(dplyr)
+    
+    data2022 <- data2022 %>% 
+    mutate(Anzahl = ifelse(Anzahl == "4 oder weniger", 2.5, as.numeric(Anzahl)))
+
+    data2021 <- data2021 %>% 
+    mutate(Anzahl = ifelse(Anzahl == "4 oder weniger", 2.5, as.numeric(Anzahl)))
+
+    ```  
+    
+    
+    We set all "4 oder weniger" to 2.5, because this is the mid of the possible values 1,2,3,4. 
+    
+    On top of this its not a natural number, so it's obvious that it's not a real measured value.
+    
+    
+
 ## Exercise 4: Chat GPT + apply (3 points)
